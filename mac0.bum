@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1619448811990" org.eventb.texttools.text_representation="machine mac0 sees ctx1&#10;&#10;variables PlanSet currentplan currentloc&#10;&#10;invariants&#10;  @inv1 ∀ p · p ∈ PlanSet ⇒ (g ∈  p ∧ s0 ∈ p)&#10;  @inv2 ∀ p· p ∈ PlanSet ⇒ p ⊆ grid&#10;  @inv3 ∀ p,x,y · p ∈ PlanSet ∧ (x↦y) ∈ p ⇒ (x↦y) ∉ Obs&#10;  @inv4 currentplan ⊆ grid&#10;  @inv5 currentloc ∈ grid&#10;  @inv6 ∀ p · p ∈ PlanSet ⇒ (p ⊆ grid ∧ (card(p) ≥ 2 ⇒ ∃ r · r ∈ p ∧ adjacent(r↦g) = TRUE))&#10;  @inv7 ∀ p · p ∈ PlanSet ⇒ (p ⊆ grid ∧ (card(p) ≥ 2 ⇒ ∃ r · r ∈ p ∧ adjacent(s0↦r) = TRUE))&#10;  @inv8 ∀ p,p0 · p ∈ PlanSet ∧ p0 ∈ p ⇒ (card(p) ≥ 3 ∧ p0 ≠ g ∧ p0 ≠ s0 ⇒  (∃ q,r · q ∈ p ∧ r ∈ p ∧ (adjacent(p0↦q) = TRUE) ∧ (adjacent(r↦p0) = TRUE)))&#10; @inv9 ∀ p ·p ∈ PlanSet ⇒ finite(p)&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 PlanSet ≔ {∅}&#10;      @act2 currentplan ≔ ∅&#10;      @act3 currentloc ≔ s0&#10;  end&#10;&#10;  event addstart&#10;    where&#10;      @grd2 currentloc = s0&#10;    then&#10;      @act1 currentplan ≔ currentplan ∪ {s0}&#10;  end&#10;&#10;  event addcurrentplan&#10;    where&#10;      @grd1 g ∈ currentplan&#10;      @grd2 currentplan ∉ PlanSet&#10;      @grd7 ∀p0 · p0 ∈ currentplan ∧ p0 ≠ g ∧ p0 ≠ s0 ⇒  (∃ q,r · q ∈ currentplan ∧ r ∈ currentplan ∧ (adjacent(p0↦q) = TRUE) ∧ (adjacent(r↦p0) = TRUE))&#10;     then&#10;      @act1 PlanSet ≔ PlanSet ∪ {currentplan}&#10;      @act2 currentloc ≔ s0&#10;      @act3 currentplan ≔ ∅&#10;  end&#10;&#10;  event moveLeft&#10;    where&#10;      @grd1 left(currentloc) ∈ grid&#10;      @grd2 left(currentloc) ∉ Obs&#10;    then&#10;      @act1 currentplan ≔ currentplan ∪ {currentloc}&#10;      @act2 currentloc ≔ left(currentloc)&#10;  end&#10;&#10;  event moveRight&#10;    where&#10;      @grd1 right(currentloc) ∈ grid&#10;      @grd2 right(currentloc) ∉ Obs&#10;     then&#10;      @act1 currentplan ≔ currentplan ∪ {currentloc}&#10;      @act2 currentloc ≔ right(currentloc)&#10;  end&#10;&#10;  event moveUp&#10;    where&#10;      @grd1 up(currentloc) ∈ grid&#10;      @grd2 up(currentloc) ∉ Obs&#10;     then&#10;      @act1 currentplan ≔ currentplan ∪ {currentloc}&#10;      @act2 currentloc ≔ up(currentloc)&#10;  end&#10;&#10;  event moveDown&#10;    where&#10;      @grd1 down(currentloc) ∈ grid&#10;      @grd2 down(currentloc) ∉ Obs&#10;     then&#10;      @act1 currentplan ≔ currentplan ∪ {currentloc}&#10;      @act2 currentloc ≔ down(currentloc)&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="3" org.eventb.core.target="ctx1"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="PlanSet ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="currentplan ≔ {s0}" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="currentloc ≔ s0" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="(" org.eventb.core.generated="false" org.eventb.core.identifier="PlanSet"/>
+<org.eventb.core.invariant name=")" org.eventb.core.generated="false" org.eventb.core.label="inv1" org.eventb.core.predicate="∀ p · p ∈ PlanSet ⇒ (g ∈  p ∧ s0 ∈ p)"/>
+<org.eventb.core.invariant name="_vma0gKRGEeuG5_p3YtBErA" org.eventb.core.generated="false" org.eventb.core.label="inv2" org.eventb.core.predicate="∀ p· p ∈ PlanSet ⇒ p ⊆ grid"/>
+<org.eventb.core.invariant name="," org.eventb.core.generated="false" org.eventb.core.label="inv3" org.eventb.core.predicate="∀ p,x,y · p ∈ PlanSet ∧ (x↦y) ∈ p ⇒ (x↦y) ∉ Obs"/>
+<org.eventb.core.variable name="-" org.eventb.core.generated="false" org.eventb.core.identifier="currentplan"/>
+<org.eventb.core.invariant name="." org.eventb.core.generated="false" org.eventb.core.label="inv4" org.eventb.core.predicate="currentplan ⊆ grid"/>
+<org.eventb.core.variable name="/" org.eventb.core.generated="false" org.eventb.core.identifier="currentloc"/>
+<org.eventb.core.invariant name="0" org.eventb.core.generated="false" org.eventb.core.label="inv5" org.eventb.core.predicate="currentloc ∈ grid"/>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="addcurrentplan">
+<org.eventb.core.guard name="'" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="g ∈ currentplan"/>
+<org.eventb.core.guard name="(" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="currentplan ∉ PlanSet"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="PlanSet ≔ PlanSet ∪ {currentplan}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="." org.eventb.core.generated="false" org.eventb.core.label="grd7" org.eventb.core.predicate="∀p0 · p0 ∈ currentplan ∧ p0 ≠ g ∧ p0 ≠ s0 ⇒  (∃ q,r · q ∈ currentplan ∧ r ∈ currentplan ∧ (adjacent(p0↦q) = TRUE) ∧ (adjacent(r↦p0) = TRUE))"/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="currentloc ≔ s0" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_SBzWgKQ6EeuwCuvtfId6kw" org.eventb.core.assignment="currentplan ≔ {s0}" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="moveLeft">
+<org.eventb.core.guard name="'" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="left(currentloc) ∈ grid"/>
+<org.eventb.core.guard name="(" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="left(currentloc) ∉ Obs"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="currentplan ≔ currentplan ∪ {left(currentloc)}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="currentloc ≔ left(currentloc)" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="moveRight">
+<org.eventb.core.guard name="'" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="right(currentloc) ∈ grid"/>
+<org.eventb.core.guard name="(" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="right(currentloc) ∉ Obs"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="currentplan ≔ currentplan ∪ {right(currentloc)}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="currentloc ≔ right(currentloc)" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="moveUp">
+<org.eventb.core.guard name="'" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="up(currentloc) ∈ grid"/>
+<org.eventb.core.guard name="(" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="up(currentloc) ∉ Obs"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="currentplan ≔ currentplan ∪ {up(currentloc)}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="currentloc ≔ up(currentloc)" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="moveDown">
+<org.eventb.core.guard name="'" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="down(currentloc) ∈ grid"/>
+<org.eventb.core.guard name="(" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="down(currentloc) ∉ Obs"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="currentplan ≔ currentplan ∪ {down(currentloc)}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="currentloc ≔ down(currentloc)" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="8" org.eventb.core.generated="false" org.eventb.core.label="inv6" org.eventb.core.predicate="∀ p · p ∈ PlanSet ⇒ (p ⊆ grid ∧ (card(p) ≥ 2 ⇒ ∃ r · r ∈ p ∧ adjacent(r↦g) = TRUE))"/>
+<org.eventb.core.invariant name="9" org.eventb.core.generated="false" org.eventb.core.label="inv7" org.eventb.core.predicate="∀ p · p ∈ PlanSet ⇒ (p ⊆ grid ∧ (card(p) ≥ 2 ⇒ ∃ r · r ∈ p ∧ adjacent(s0↦r) = TRUE))"/>
+<org.eventb.core.invariant name="_h0e10KaPEeu6tq7zh1IMCg" org.eventb.core.generated="false" org.eventb.core.label="inv8" org.eventb.core.predicate="∀ p,p0 · p ∈ PlanSet ∧ p0 ∈ p ⇒ (card(p) ≥ 3 ∧ p0 ≠ g ∧ p0 ≠ s0 ⇒  (∃ q,r · q ∈ p ∧ r ∈ p ∧ (adjacent(p0↦q) = TRUE) ∧ (adjacent(r↦p0) = TRUE)))"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCg" org.eventb.core.generated="false" org.eventb.core.label="inv9" org.eventb.core.predicate="∀ p ·p ∈ PlanSet ⇒ finite(p)"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCh" org.eventb.core.label="inv10" org.eventb.core.predicate="s0 ∈ currentplan"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCi" org.eventb.core.label="inv11" org.eventb.core.predicate="∀ x, y· (x ↦ y) ∈ currentplan ⇒ (x ↦ y) ∉ Obs"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCj" org.eventb.core.label="inv12" org.eventb.core.predicate="s0 ∉ Obs"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCk" org.eventb.core.label="inv13" org.eventb.core.predicate="card(currentplan) ≥ 2 ⇒ ( ∃ r · r ∈ currentplan ∧ adjacent(s0 ↦ r) = TRUE )"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCl" org.eventb.core.label="inv14" org.eventb.core.predicate="card(currentplan) ≥ 2 ⇒  ( ∀ p · p ∈ currentplan ⇒ ( ∃ q · q ∈ currentplan ∧ adjacent(p ↦ q) = TRUE ))"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCm" org.eventb.core.label="inv15" org.eventb.core.predicate="currentloc ∉ Obs"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCn" org.eventb.core.label="inv16" org.eventb.core.predicate="currentloc ∈ currentplan"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCo" org.eventb.core.label="inv17" org.eventb.core.predicate="card(currentplan) &lt; 2 ⇒ currentplan = {s0}"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCp" org.eventb.core.label="inv18" org.eventb.core.predicate="card(currentplan) &lt; 2 ⇒ currentloc = s0" org.eventb.core.theorem="true"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCq" org.eventb.core.label="inv19" org.eventb.core.predicate="card(currentplan) &lt; 2 ⇒ ( ∃ r· r ∈ grid ∧ currentplan = {r} )" org.eventb.core.theorem="true"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCr" org.eventb.core.label="inv20" org.eventb.core.predicate="card(currentplan ∩ {left(currentloc)}) ≤ 1" org.eventb.core.theorem="true"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCs" org.eventb.core.label="inv21" org.eventb.core.predicate="card(currentplan ∩ {right(currentloc)}) ≤ 1" org.eventb.core.theorem="true"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCt" org.eventb.core.label="inv22" org.eventb.core.predicate="card(currentplan ∩ {up(currentloc)}) ≤ 1" org.eventb.core.theorem="true"/>
+<org.eventb.core.invariant name="_wT7dwKaWEeu6tq7zh1IMCu" org.eventb.core.label="inv23" org.eventb.core.predicate="card(currentplan ∩ {down(currentloc)}) ≤ 1" org.eventb.core.theorem="true"/>
+</org.eventb.core.machineFile>
