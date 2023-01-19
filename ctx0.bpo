@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="H" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="g" org.eventb.core.type="ℤ×ℤ"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="grid" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="Obs" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="s0" org.eventb.core.type="ℤ×ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx0.bpo|org.eventb.core.poFile#ctx0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="n&gt;0" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="grid⊆ℕ × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#+"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x ↦ y∈grid⇒x&lt;n∧y&lt;n" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Obs⊆grid" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="s0∈grid" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="g∈grid" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="H⊆grid × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="g∉Obs" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="s0∉Obs" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="∀p⦂ℙ(ℤ×ℤ)·p⊆grid⇒finite(p)" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#7"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

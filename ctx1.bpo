@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="H" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="g" org.eventb.core.type="ℤ×ℤ"/>
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="grid" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="Obs" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="s0" org.eventb.core.type="ℤ×ℤ"/>
+<org.eventb.core.poPredicate name="grie" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="grif" org.eventb.core.predicate="n&gt;0" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="grig" org.eventb.core.predicate="grid⊆ℕ × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#+"/>
+<org.eventb.core.poPredicate name="grih" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x ↦ y∈grid⇒x&lt;n∧y&lt;n" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="grii" org.eventb.core.predicate="Obs⊆grid" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="grij" org.eventb.core.predicate="s0∈grid" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="grik" org.eventb.core.predicate="g∈grid" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="gril" org.eventb.core.predicate="H⊆grid × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="grim" org.eventb.core.predicate="g∉Obs" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="grin" org.eventb.core.predicate="s0∉Obs" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="grio" org.eventb.core.predicate="∀p⦂ℙ(ℤ×ℤ)·p⊆grid⇒finite(p)" org.eventb.core.source="/eventb-planner-module-louise/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.axiom#7"/>
+<org.eventb.core.poIdentifier name="left" org.eventb.core.type="ℙ(ℤ×ℤ×(ℤ×ℤ))"/>
+<org.eventb.core.poIdentifier name="adjacent" org.eventb.core.type="ℙ(ℤ×ℤ×(ℤ×ℤ)×BOOL)"/>
+<org.eventb.core.poIdentifier name="distance" org.eventb.core.type="ℙ(ℤ×ℤ×(ℤ×ℤ)×ℤ)"/>
+<org.eventb.core.poIdentifier name="right" org.eventb.core.type="ℙ(ℤ×ℤ×(ℤ×ℤ))"/>
+<org.eventb.core.poIdentifier name="down" org.eventb.core.type="ℙ(ℤ×ℤ×(ℤ×ℤ))"/>
+<org.eventb.core.poIdentifier name="up" org.eventb.core.type="ℙ(ℤ×ℤ×(ℤ×ℤ))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx1"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒x ↦ y∈dom(left)∧left∈ℤ × ℤ ⇸ ℤ × ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx3"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒x ↦ y∈dom(right)∧right∈ℤ × ℤ ⇸ ℤ × ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx5"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒x ↦ y∈dom(up)∧up∈ℤ × ℤ ⇸ ℤ × ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#0"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx7"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒x ↦ y∈dom(down)∧down∈ℤ × ℤ ⇸ ℤ × ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#3"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm11/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx:"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·(a∈grid∧b∈grid⇒a ↦ b∈dom(distance)∧distance∈ℤ × ℤ × (ℤ × ℤ) ⇸ ℤ)∧(a∈grid∧b∈grid∧distance(a ↦ b)=1⇒a ↦ b∈dom(adjacent)∧adjacent∈ℤ × ℤ × (ℤ × ℤ) ⇸ BOOL)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#8"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx:"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm12/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂ℤ×ℤ·x∈grid⇒x ↦ x∈dom(adjacent)∧adjacent∈ℤ × ℤ × (ℤ × ℤ) ⇸ BOOL" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#9"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx;"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm13/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a≥c∧b≥d⇒a ↦ b ↦ (c ↦ d)∈dom(distance)∧distance∈ℤ × ℤ × (ℤ × ℤ) ⇸ ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_OWuEgKQ9EeuwCuvtfId6kw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_OWuEgKQ9EeuwCuvtfId6kw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx="/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm14/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx&gt;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a&lt;c∧b≥d⇒a ↦ b ↦ (c ↦ d)∈dom(distance)∧distance∈ℤ × ℤ × (ℤ × ℤ) ⇸ ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQKQ-EeuwCuvtfId6kw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQKQ-EeuwCuvtfId6kw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx&gt;"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm15/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a≥c∧b&lt;d⇒a ↦ b ↦ (c ↦ d)∈dom(distance)∧distance∈ℤ × ℤ × (ℤ × ℤ) ⇸ ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQaQ-EeuwCuvtfId6kw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQaQ-EeuwCuvtfId6kw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx?"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm16/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx@"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a&lt;c∧b&lt;d⇒a ↦ b ↦ (c ↦ d)∈dom(distance)∧distance∈ℤ × ℤ × (ℤ × ℤ) ⇸ ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6kw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6kw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx@"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm17/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·a∈grid∧b∈grid⇒a ↦ b∈dom(distance)∧distance∈ℤ × ℤ × (ℤ × ℤ) ⇸ ℤ∧b ↦ a∈dom(distance)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_XZiFsLluEeuPR80P6fqfgw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_XZiFsLluEeuPR80P6fqfgw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxA"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm17/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxA"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·a∈grid∧b∈grid⇒distance(a ↦ b)=distance(b ↦ a)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_XZiFsLluEeuPR80P6fqfgw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_XZiFsLluEeuPR80P6fqfgw"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxA"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm18/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxB"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·a∈grid∧b∈grid⇒a ↦ b∈dom(adjacent)∧adjacent∈ℤ × ℤ × (ℤ × ℤ) ⇸ BOOL∧b ↦ a∈dom(adjacent)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6ky"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6ky"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxB"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm18/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxB"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·a∈grid∧b∈grid⇒adjacent(a ↦ b)=adjacent(b ↦ a)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6ky"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6ky"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxB"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm19/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxC"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(left)∧left∈ℤ × ℤ ⇸ ℤ × ℤ∧a ↦ left(a)∈dom(adjacent)∧adjacent∈ℤ × ℤ × (ℤ × ℤ) ⇸ BOOL" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxC"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm19/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxC"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ left(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxC"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm20/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxD"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(right)∧right∈ℤ × ℤ ⇸ ℤ × ℤ∧a ↦ right(a)∈dom(adjacent)∧adjacent∈ℤ × ℤ × (ℤ × ℤ) ⇸ BOOL" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRoLphEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRoLphEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxD"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm20/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxD"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ right(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRoLphEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRoLphEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxD"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm21/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxE"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(up)∧up∈ℤ × ℤ ⇸ ℤ × ℤ∧a ↦ up(a)∈dom(adjacent)∧adjacent∈ℤ × ℤ × (ℤ × ℤ) ⇸ BOOL" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRobphEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRobphEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxE"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm21/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxE"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ up(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRobphEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRobphEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxE"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm22/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxF"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(down)∧down∈ℤ × ℤ ⇸ ℤ × ℤ∧a ↦ down(a)∈dom(adjacent)∧adjacent∈ℤ × ℤ × (ℤ × ℤ) ⇸ BOOL" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRorphEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRorphEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxF"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm22/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxF"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ down(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRorphEeua2746o1ar1w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRorphEeua2746o1ar1w"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxF"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm23/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxG"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(left)∧left∈ℤ × ℤ ⇸ ℤ × ℤ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_PR70kLxwEeuMT6TPab0XvA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_PR70kLxwEeuMT6TPab0XvA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxG"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm23/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxG"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒{a}∩{left(a)}=(∅ ⦂ ℙ(ℤ×ℤ))" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_PR70kLxwEeuMT6TPab0XvA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_PR70kLxwEeuMT6TPab0XvA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxG"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm24/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxH"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(left)∧left∈ℤ × ℤ ⇸ ℤ × ℤ∧finite({a}∩{left(a)})" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_fRX3ULxxEeuqC7rGjjqrwQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_fRX3ULxxEeuqC7rGjjqrwQ"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxH"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm24/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxH"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{left(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_fRX3ULxxEeuqC7rGjjqrwQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_fRX3ULxxEeuqC7rGjjqrwQ"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxH"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm25/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxI"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(right)∧right∈ℤ × ℤ ⇸ ℤ × ℤ∧finite({a}∩{right(a)})" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1x"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1x"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxI"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm25/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxI"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{right(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1x"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1x"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxI"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm26/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxJ"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(up)∧up∈ℤ × ℤ ⇸ ℤ × ℤ∧finite({a}∩{up(a)})" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1y"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1y"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxJ"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm26/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxJ"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{up(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1y"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1y"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxJ"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm27/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxK"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒a∈dom(down)∧down∈ℤ × ℤ ⇸ ℤ × ℤ∧finite({a}∩{down(a)})" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1z"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1z"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxK"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="axm27/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxK"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{down(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1z"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1z"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxK"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYPctx1" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="left∈ℕ × ℕ → ℕ × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx3" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx1" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒left(x ↦ y)=x − 1 ↦ y" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="right∈ℕ × ℕ → ℕ × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx5" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx3" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒right(x ↦ y)=x+1 ↦ y" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#-"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="up∈ℕ × ℕ → ℕ × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#\/"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx7" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx5" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒up(x ↦ y)=x ↦ y+1" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="down∈ℕ × ℕ → ℕ × ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx:" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx7" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="∀x⦂ℤ,y⦂ℤ·x∈ℕ∧y∈ℕ⇒down(x ↦ y)=x ↦ y − 1" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="adjacent∈grid × grid → BOOL" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="distance∈grid × grid → ℕ" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#6"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx;" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx:" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·a∈grid∧b∈grid∧distance(a ↦ b)=1⇒adjacent(a ↦ b)=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#8"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx=" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx;" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="∀x⦂ℤ×ℤ·x∈grid⇒adjacent(x ↦ x)=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#9"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx&gt;" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx=" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a≥c∧b≥d⇒distance(a ↦ b ↦ (c ↦ d))=a − c+(b − d)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_OWuEgKQ9EeuwCuvtfId6kw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx?" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx&gt;" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a&lt;c∧b≥d⇒distance(a ↦ b ↦ (c ↦ d))=c − a+(b − d)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQKQ-EeuwCuvtfId6kw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctx@" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx?" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a≥c∧b&lt;d⇒distance(a ↦ b ↦ (c ↦ d))=a − c+(d − b)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQaQ-EeuwCuvtfId6kw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxA" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctx@" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD15" org.eventb.core.predicate="∀a⦂ℤ,b⦂ℤ,c⦂ℤ,d⦂ℤ·a ↦ b∈grid∧c ↦ d∈grid∧a&lt;c∧b&lt;d⇒distance(a ↦ b ↦ (c ↦ d))=c − a+(d − b)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6kw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxB" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxA" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD16" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·a∈grid∧b∈grid⇒distance(a ↦ b)=distance(b ↦ a)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_XZiFsLluEeuPR80P6fqfgw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxC" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxB" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD17" org.eventb.core.predicate="∀a⦂ℤ×ℤ,b⦂ℤ×ℤ·a∈grid∧b∈grid⇒adjacent(a ↦ b)=adjacent(b ↦ a)" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_gOZbQqQ-EeuwCuvtfId6ky"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxD" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxC" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD18" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ left(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxE" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxD" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD19" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ right(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRoLphEeua2746o1ar1w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxF" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxE" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD20" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ up(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRobphEeua2746o1ar1w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxG" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxF" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD21" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒adjacent(a ↦ down(a))=TRUE" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_mWKRorphEeua2746o1ar1w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxH" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxG" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD22" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒{a}∩{left(a)}=(∅ ⦂ ℙ(ℤ×ℤ))" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_PR70kLxwEeuMT6TPab0XvA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxI" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxH" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD23" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{left(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_fRX3ULxxEeuqC7rGjjqrwQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxJ" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxI" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD24" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{right(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1x"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPctxK" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxJ" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD25" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{up(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1y"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/eventb-planner-module-louise/ctx1.bpo|org.eventb.core.poFile#ctx1|org.eventb.core.poPredicateSet#HYPctxK" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD26" org.eventb.core.predicate="∀a⦂ℤ×ℤ·a∈grid⇒card({a}∩{down(a)})=0" org.eventb.core.source="/eventb-planner-module-louise/ctx1.buc|org.eventb.core.contextFile#ctx1|org.eventb.core.axiom#_rH9CILpgEeua2746o1ar1z"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
